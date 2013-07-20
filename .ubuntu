@@ -28,7 +28,7 @@ alias mem="sudo python ~/ps_mem.py"
 alias live="sudo PORT=8082 jsbin"
 
 # hint for these shortcuts
-alias hint="echo; cat $DOTFILES_PATH/.hints; cat $DOTFILES_PATH/.ubuntu_hints; echo; echo"
+alias hint="echo; cat $DOTFILES_PATH/.hints; echo; echo; cat $DOTFILES_PATH/.ubuntu_hints; echo; echo"
 
 # show login message
 . "$DOTFILES_PATH"/.ubuntu_login

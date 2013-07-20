@@ -5,7 +5,7 @@ echo 'OSX profile loaded.'
 
 # enable cli/ls color
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # set default editor
 export EDITOR='subl -w'
@@ -27,4 +27,4 @@ alias d="grunt dev"
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # hint for these shortcuts
-alias hint="echo; cat $DOTFILES_PATH/.hints; cat $DOTFILES_PATH/.osx_hints; echo; echo"
+alias hint="echo; cat $DOTFILES_PATH/.hints; echo; echo; cat $DOTFILES_PATH/.osx_hints; echo; echo"
