@@ -9,7 +9,7 @@ fi
 tput sgr0
 LIGHTRED=$(tput setaf 9)
 ORANGE=$(tput setaf 172)
-GREEN=$(tput setaf 10)
+PURPLE=$(tput setaf 141)
 WHITE=$(tput setaf 256)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
@@ -27,7 +27,7 @@ function git_info() {
 # Only show username/host if not default
 function usernamehost() {
 	if [ "$SSH_TTY" ]; then
-		echo "${GREEN}$USER@$HOSTNAME${RESET}:";
+		echo "${PURPLE}$USER@$HOSTNAME${RESET}:";
 	fi
 }
 
