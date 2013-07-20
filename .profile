@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES_PATH=~/dotfiles
+DOTFILES_PATH=~/.dotfiles
 
 . "$DOTFILES_PATH"/.prompt
 . "$DOTFILES_PATH"/.aliases
