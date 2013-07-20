@@ -1,0 +1,1 @@
+dotfiles. currently bash profile only.

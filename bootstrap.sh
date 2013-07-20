@@ -1,2 +1,2 @@
-echo '. ~/.dotfiles/.profile' > ~/.profile
+echo '. ~/.dotfiles/bash/.profile' > ~/.profile
 source ~/.profile
