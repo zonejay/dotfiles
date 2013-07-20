@@ -27,4 +27,4 @@ alias d="grunt dev"
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # hint for these shortcuts
-alias hint="cat $DOTFILES_PATH/.hints; cat $DOTFILES_PATH/.osx_hints"
+alias hint="echo; cat $DOTFILES_PATH/.hints; cat $DOTFILES_PATH/.osx_hints; echo; echo"

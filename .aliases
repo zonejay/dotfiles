@@ -3,10 +3,6 @@
 # make aliases sudo-able
 alias sudo="sudo "
 
-# open/source this file
-alias pr="subl ~/.profile"
-alias spr="source ~/.profile; echo '~/.profile reloaded.'"
-
 # directory navigation
 alias ..="cd .."
 alias ...="cd ../.."

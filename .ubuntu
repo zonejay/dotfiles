@@ -3,11 +3,6 @@
 # Configs for my VPS
 echo 'Ubuntu profile loaded.'
 
-# if has ~/.bashrc import it
-if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-fi
-
 # set default editor
 export EDITOR='nano -w'
 export VISUAL="$EDITOR"
@@ -33,7 +28,7 @@ alias mem="sudo python ~/ps_mem.py"
 alias live="sudo PORT=8082 jsbin"
 
 # hint for these shortcuts
-alias hint="cat $DOTFILES_PATH/.hints; cat $DOTFILES_PATH/.ubuntu_hints"
+alias hint="echo; cat $DOTFILES_PATH/.hints; cat $DOTFILES_PATH/.ubuntu_hints; echo; echo"
 
 # show login message
 . "$DOTFILES_PATH"/.ubuntu_login

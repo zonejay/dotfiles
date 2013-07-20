@@ -11,3 +11,8 @@ if [[ ! "$SSH_TTY" && "$OSTYPE" =~ ^darwin ]]; then
 else
 	. "$DOTFILES_PATH"/.ubuntu
 fi
+
+# rerun bootstrap script
+alias dot="bash $DOTFILES_PATH/bootstrap.sh"
+# reload
+alias spr="source ~/.profile; echo '~/.profile reloaded.'"
