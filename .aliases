@@ -18,7 +18,7 @@ alias fs="stat -f '%z bytes'"
 
 # git shortcuts
 alias gs="git status"
-alias ga="git add"
+alias ga="git add ."
 alias gc="git commit -m"
 
 # npm shortcuts that only list top-level modules
