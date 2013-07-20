@@ -1,0 +1,6 @@
+sw      sass watch .
+c       component
+cb      component build
+g       grunt
+gw      grunt watch
+d       grunt dev

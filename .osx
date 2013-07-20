@@ -1,0 +1,28 @@
+# Configs for development machine
+echo 'OSX profile loaded.'
+
+# enable cli/ls color
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# set default editor
+export EDITOR='subl -w'
+export VISUAL="$EDITOR"
+
+# common places
+alias wk="cd ~/Work"
+alias p="cd ~/Personal"
+
+# development workflow shortcuts
+alias sw="sass --watch ."
+alias c="component"
+alias cb="component build"
+alias g="grunt"
+alias gw="grunt watch"
+alias d="grunt dev"
+
+# recursively delete .DS_Store
+alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+
+# hint for these shortcuts
+alias hint="cat $DOTFILES_PATH/.hints; cat $DOTFILES_PATH/.osx_hints"
