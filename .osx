@@ -3,7 +3,7 @@
 # Configs for development machine
 echo 'OSX profile loaded.'
 
-# enable cli/ls color
+# A color scheme that loosely matches Ubuntu's default scheme.
 
 # The color designators are as follows: 
 
