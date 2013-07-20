@@ -22,7 +22,7 @@ alias ga="git add ."
 
 # npm shortcuts that only list top-level modules
 # ! overrides the line-number utility
-npm_filter="| grep ^[├└] | sed s/[├└]─[─┬]/─/g"
+npm_filter="| grep -v '^[ │]' | sed s/┬/─/g"
 alias ng="npm list -g $npm_filter"
 alias nl="npm list $npm_filter"
 
