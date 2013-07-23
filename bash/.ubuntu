@@ -24,9 +24,6 @@ alias nr="sudo restart nginx"
 # show memory usage
 alias mem="sudo python ~/ps_mem.py"
 
-# start jsbin on 8082 for live code cast
-alias live="sudo PORT=8082 jsbin"
-
 # hint for these shortcuts
 alias hint="echo; cat $BASH_SRC_PATH/.ubuntu_hints; echo; echo; cat $BASH_SRC_PATH/.hints; echo; echo"
 
