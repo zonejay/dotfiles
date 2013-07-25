@@ -13,9 +13,6 @@ alias .....="cd ../../../.."
 alias la="ls -A"
 alias ll="ls -Al"
 
-# File size
-alias fs="stat -f '%z bytes'"
-
 # git shortcuts
 alias gs="git status"
 alias ga="git add ."
