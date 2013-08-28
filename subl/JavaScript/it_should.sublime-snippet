@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[it('should ${1:pass}', function (${2:done}) {
     ${0:// body...}
-}]]></content>
+})]]></content>
     <tabTrigger>its</tabTrigger>
     <scope>source.js</scope>
     <description>It should ...</description>
