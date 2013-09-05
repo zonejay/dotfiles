@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[it('should ${1:pass}', function (${2:done}) {
+    <content><![CDATA[it('should ${1:pass}', function (${2}) {
     ${0:// body...}
 })]]></content>
     <tabTrigger>its</tabTrigger>
