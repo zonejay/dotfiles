@@ -13,6 +13,13 @@ alias .....="cd ../../../.."
 alias la="ls -A"
 alias ll="ls -Al"
 
+# development workflow shortcuts
+alias sw="sass --watch ."
+alias c="component"
+alias g="grunt"
+alias gw="grunt watch"
+alias d="grunt dev"
+
 # git shortcuts
 alias gs="git status"
 alias ga="git add ."
@@ -23,6 +30,8 @@ alias gco="git checkout"
 alias gp="git push"
 alias gl="git pull"
 alias gt="git tag"
+alias gm="git merge"
+alias gg="git log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # npm shortcuts that only list top-level modules
 # ! overrides the line-number utility

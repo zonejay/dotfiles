@@ -1,6 +1,7 @@
 #!/bin/bash
 
-BASH_SRC_PATH=~/.dotfiles/bash
+DOTFILES_PATH=~/.dotfiles
+BASH_SRC_PATH=$DOTFILES_PATH/bash
 
 . "$BASH_SRC_PATH"/.prompt
 . "$BASH_SRC_PATH"/.aliases
@@ -14,6 +15,6 @@ else
 fi
 
 # rerun bootstrap script
-alias dot="bash $BASH_SRC_PATH/bootstrap.sh"
+alias dot="$EDITOR ~/.dotfiles"
 # reload
 alias spr="source ~/.profile; echo '~/.profile reloaded.'"

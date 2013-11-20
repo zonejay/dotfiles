@@ -54,16 +54,8 @@ export VISUAL="$EDITOR"
 alias wk="cd ~/Work"
 alias p="cd ~/Personal"
 
-# development workflow shortcuts
-alias sw="sass --watch ."
-alias c="component"
-alias cb="component build"
-alias g="grunt"
-alias gw="grunt watch"
-alias d="grunt dev"
-
 # recursively delete .DS_Store
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # hint for these shortcuts
-alias hint="echo; cat $BASH_SRC_PATH/.osx_hints; echo; echo; cat $BASH_SRC_PATH/.hints; echo; echo"
+alias hint="echo; cat $BASH_SRC_PATH/.hints; echo; echo"
