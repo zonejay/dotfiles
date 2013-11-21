@@ -47,7 +47,7 @@ export CLICOLOR=1
 export LSCOLORS=ExGxdxDxCxegedhbadaced
 
 # set default editor
-export EDITOR='subl -w'
+export EDITOR='subl'
 export VISUAL="$EDITOR"
 
 # common places
@@ -59,3 +59,8 @@ alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # hint for these shortcuts
 alias hint="echo; cat $BASH_SRC_PATH/.hints; echo; echo"
+
+# shortcut for uploading quick static files to VPS
+function sketch() {
+    scp -r $1 evan@do:/srv/static/sketch/$2
+}
