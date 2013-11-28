@@ -23,7 +23,7 @@ alias d="grunt dev"
 # git shortcuts
 alias gs="git status"
 alias ga="git add ."
-alias gc="git commit"
+alias gc="git commit -m"
 alias gb="git branch"
 alias gd="git diff"
 alias gco="git checkout"
@@ -35,6 +35,5 @@ alias gg="git log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow
 
 # npm shortcuts that only list top-level modules
 # ! overrides the line-number utility
-npm_filter="| grep -v '^[ │]' | sed s/┬/─/g"
-alias ng="npm list -g $npm_filter"
-alias nl="npm list $npm_filter"
+alias ng="npm list -g --depth=0 2>/dev/null"
+alias nl="npm list --depth=0 2>/dev/null"
