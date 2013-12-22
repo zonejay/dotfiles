@@ -53,6 +53,7 @@ export VISUAL="$EDITOR"
 # common places
 alias wk="cd ~/Work"
 alias p="cd ~/Personal"
+alias r="cd ~/Research"
 
 # recursively delete .DS_Store
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
