@@ -14,7 +14,7 @@ else
 	. "$BASH_SRC_PATH"/.ubuntu
 fi
 
-# rerun bootstrap script
-alias dot="$EDITOR ~/.dotfiles"
+# edit this folder
+alias dot="cd ~/.dotfiles"
 # reload
 alias spr="source ~/.profile; echo '~/.profile reloaded.'"
