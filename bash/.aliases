@@ -33,9 +33,10 @@ alias gt="git tag"
 alias gm="git merge"
 alias gg="git log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-# hexo blogging shortcuts
+# blogging shortcuts
 alias hs="hexo server"
 alias hd="rm db.json && hexo generate && hexo deploy"
+alias blog="cd ~/Personal/blog && subl . && hexo server"
 
 # npm shortcuts that only list top-level modules
 # ! overrides the line-number utility
