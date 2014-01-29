@@ -42,3 +42,6 @@ alias blog="cd ~/Personal/blog && subl . && hexo server"
 # ! overrides the line-number utility
 alias ng="npm list -g --depth=0 2>/dev/null"
 alias nl="npm list --depth=0 2>/dev/null"
+
+# process finding
+alias pg="pgrep -lf"

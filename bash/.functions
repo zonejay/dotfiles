@@ -44,11 +44,6 @@ function clean() {
     fi
 }
 
-# for finding processes
-function pg() {
-    ps ax | grep [${1:0:1}]${1:1}
-}
-
 # check file size
 function fs() {
     du -sh ${1} | awk '{print $1}'
