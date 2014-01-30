@@ -19,6 +19,7 @@ alias c="component"
 alias g="grunt"
 alias gw="grunt watch"
 alias d="grunt dev"
+alias se="java -jar ~/Personal/selenium.jar"
 
 # git shortcuts
 alias gs="git status"
