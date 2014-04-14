@@ -7,14 +7,15 @@
             "selector": "source.js"
         }
     ],
-    "color_scheme": "Packages/Color Scheme - User/Monokai.tmTheme",
+    "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
     "font_face": "Inconsolata-g",
     "font_size": 12.0,
     "highlight_line": true,
     "ignored_packages":
     [
-        "Vintage",
-        ".DS_Store"
+        ".DS_Store",
+        "Vintage"
     ],
+    "theme": "Spacegray Eighties.sublime-theme",
     "translate_tabs_to_spaces": true
 }
