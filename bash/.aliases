@@ -46,3 +46,6 @@ alias nl="npm list --depth=0 2>/dev/null"
 
 # process finding
 alias pg="pgrep -lf"
+
+# appengine deploy
+alias dp="appcfg.py update . --oauth2"
