@@ -49,3 +49,6 @@ alias pg="pgrep -lf"
 
 # appengine deploy
 alias dp="appcfg.py update . --oauth2"
+
+# run jasmine tests
+alias j="jasmine-node --verbose test/unit/specs/"
