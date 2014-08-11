@@ -51,4 +51,4 @@ alias pg="pgrep -lf"
 alias dp="appcfg.py update . --oauth2"
 
 # run jasmine tests
-alias j="jasmine-node --verbose test/unit/specs/"
+alias jj="jasmine-node --verbose test/unit/specs/"
