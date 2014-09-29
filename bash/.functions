@@ -49,6 +49,11 @@ function fs() {
     du -sh ${1} | awk '{print $1}'
 }
 
+# check processes using a port
+function port() {
+    lsof -iTCP:$1 -sTCP:LISTEN
+}
+
 # credit: http://nparikh.org/notes/zshrc.txt
 # Usage: extract <file>
 # Description: extracts archived files / mounts disk images
