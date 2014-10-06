@@ -1,3 +1,7 @@
+# Before running this script:
+# sudo chrown -R evan /usr/local
+# sudo echo '/usr/local/bin/bash' >> /etc/shells
+
 # make in case they aren't already there
 mkdir -p "/usr/local/lib"
 mkdir -p "/usr/local/bin"
@@ -14,7 +18,6 @@ brew update
 
 # Install and use latest bash
 brew install bash
-echo '/usr/local/bin/bash' > /etc/shells
 chsh -s /usr/local/bin/bash
 
 # Install git
@@ -70,6 +73,10 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 # clone this repo
 git clone https://github.com/yyx990803/dotfiles ~/.dotfiles
+
+# Make some commonly used folders
+mkdir ~/Personal
+mkdir ~/Work
 
 # Source dot files
 echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
