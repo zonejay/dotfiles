@@ -5,5 +5,5 @@
  */
 ]]></content>
     <tabTrigger>/</tabTrigger>
-    <scope>source.js</scope>
+    <scope>source.js,source.stylus</scope>
 </snippet>
