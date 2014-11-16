@@ -52,3 +52,6 @@ alias dp="appcfg.py update . --oauth2"
 
 # run jasmine tests
 alias jj="jasmine-node --verbose test/unit/specs/"
+
+# checked out version of meteor
+alias m="~/Work/meteor/meteor"
