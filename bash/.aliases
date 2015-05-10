@@ -18,8 +18,12 @@ alias sw="sass --watch ."
 alias c="component"
 alias g="grunt"
 alias gw="grunt watch"
-alias d="grunt dev"
 alias se="java -jar /usr/local/bin/selenium.jar"
+
+# npm script shortcuts
+alias t="npm test"
+alias b="npm run build"
+alias d="npm run dev"
 
 # git shortcuts
 alias gs="git status"
