@@ -52,6 +52,13 @@ export VISUAL="$EDITOR"
 
 # common places
 alias v="cd ~/Vue"
+alias vv="cd ~/Vue/vue"
+alias vo="cd ~/Vue/vuejs.org"
+alias vr="cd ~/Vue/vue-router"
+alias vx="cd ~/Vue/vuex"
+alias vd="cd ~/Vue/vue-devtools"
+alias vl="cd ~/Vue/vue-loader"
+alias vw="cd ~/Vue/vue-templates/test/webpack"
 alias p="cd ~/Personal"
 alias r="cd ~/Research"
 
