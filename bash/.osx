@@ -75,6 +75,8 @@ function sketch() {
 
 alias i="issue"
 function issue() {
-  touch ~/Vue/vue/explorations/$1.html
-  subl ~/Vue/vue/explorations/$1.html
+  FILE="/Users/evan/Vue/vue/explorations/$1.html"
+  touch $FILE
+  open $FILE
+  subl $FILE
 }
