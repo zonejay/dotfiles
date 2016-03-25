@@ -72,3 +72,9 @@ alias hint="echo; cat $BASH_SRC_PATH/.hints; echo; echo"
 function sketch() {
     scp -r $1 evan@do:/srv/static/sketch/$2
 }
+
+alias i="issue"
+function issue() {
+  touch ~/Vue/vue/explorations/$1.html
+  subl ~/Vue/vue/explorations/$1.html
+}
