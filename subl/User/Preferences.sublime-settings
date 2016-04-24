@@ -1,22 +1,115 @@
 {
-    "always_show_minimap_viewport": true,
-    "auto_complete_triggers":
-    [
-        {
-            "characters": ".",
-            "selector": "source.js"
-        }
-    ],
-    "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
-    "font_face": "Inconsolata-g",
-    "font_size": 12.0,
-    "tab_size": 2,
-    "highlight_line": true,
-    "ignored_packages":
-    [
-        ".DS_Store",
-        "Vintage"
-    ],
-    "theme": "Spacegray Eighties.sublime-theme",
-    "translate_tabs_to_spaces": true
+	"added_words":
+	[
+		"codebase",
+		"middleware",
+		"middlewares"
+	],
+	"always_show_minimap_viewport": false,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.js"
+		}
+	],
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Material-Theme.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Hack",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 13.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		".DS_Store",
+		"Markdown",
+		"Vintage"
+	],
+	"ignored_words":
+	[
+		"App",
+		"Async",
+		"Browserify",
+		"Config",
+		"Fallback",
+		"Firebase",
+		"Inline",
+		"Lifecycle",
+		"Mixin",
+		"Mixins",
+		"Plugin",
+		"Plugins",
+		"Vue",
+		"Vue's",
+		"Webpack",
+		"Webpack's",
+		"ajax",
+		"app",
+		"app's",
+		"apps",
+		"async",
+		"backend",
+		"browserify",
+		"bundlers",
+		"callback's",
+		"camelized",
+		"composable",
+		"config",
+		"debounce",
+		"debounced",
+		"dropdown",
+		"fallback",
+		"frontend",
+		"img",
+		"inline",
+		"js",
+		"keypath",
+		"lifecycle",
+		"minification",
+		"mixin",
+		"mixins",
+		"parsable",
+		"plugin",
+		"plugins",
+		"png",
+		"polyfills",
+		"pre",
+		"programmatically",
+		"proxied",
+		"reusability",
+		"stringify",
+		"teardown",
+		"templating",
+		"timestamp",
+		"transclusion",
+		"unwatch",
+		"vue",
+		"vueify",
+		"webpack"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"index_exclude_patterns":
+	[
+		"node_modules"
+	],
+	"index_files": false,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 2,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }

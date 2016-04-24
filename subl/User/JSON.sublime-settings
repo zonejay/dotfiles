@@ -2,6 +2,9 @@
 	"extensions":
 	[
 		".jshintrc",
-		".podrc"
+		".podrc",
+		".eslintrc",
+		".bithoundrc",
+		".babelrc"
 	]
 }

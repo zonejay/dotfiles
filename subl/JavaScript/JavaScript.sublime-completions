@@ -9,6 +9,7 @@
         "console",
         "window",
 
+        { "trigger": "process", "contents": "process.env.NODE_ENV !== 'production'" },
         { "trigger": "getElementById", "contents": "getElementById('$0')" },
         { "trigger": "querySelector", "contents": "querySelector('$0')" },
         { "trigger": "querySelectorAll", "contents": "querySelectorAll('$0')" },
@@ -19,7 +20,9 @@
         { "trigger": "addEventListener", "contents": "addEventListener('$1', $0)" },
         { "trigger": "removeEventListener", "contents": "removeEventListener('$1', $0)" },
 
-        { "trigger": "cl", "contents": "console.log($0)"}
+        { "trigger": "cl", "contents": "console.log($0)"},
+        { "trigger": "@p", "contents": "@param {$0}"},
+        { "trigger": "@r", "contents": "@return {$0}"}
         
     ]
 }

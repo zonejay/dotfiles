@@ -1,0 +1,34 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Better CoffeeScript",
+		"ChannelRepositoryTools",
+		"DocBlockr",
+		"EJS",
+		"Elm Language Support",
+		"FuzzyFilePath",
+		"GitGutter",
+		"Imba",
+		"Jade",
+		"JavaScriptNext - ES6 Syntax",
+		"LESS",
+		"Markdown Extended",
+		"Markdown Preview",
+		"Material Theme",
+		"Package Control",
+		"PackageDev",
+		"PackageResourceViewer",
+		"Sass",
+		"Semi",
+		"Stylus",
+		"Swig",
+		"Theme - Spacegray",
+		"TypeScript",
+		"View In Browser"
+	]
+}

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[it('${1:should pass}', done => {
+  ${0}
+})]]></content>
+    <tabTrigger>ita</tabTrigger>
+    <scope>source.js</scope>
+    <description>It should (async)...</description>
+</snippet>
