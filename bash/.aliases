@@ -24,7 +24,8 @@ alias se="java -jar /usr/local/bin/selenium.jar"
 alias t="npm test"
 alias b="npm run build"
 alias d="npm run dev"
-alias dt="npm run dev-test"
+alias dt="npm run dev:test"
+alias ds="npm run dev:ssr"
 alias nr="npm run"
 
 # git shortcuts
