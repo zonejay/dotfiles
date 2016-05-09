@@ -47,7 +47,7 @@ export CLICOLOR=1
 export LSCOLORS=ExGxdxDxCxegedhbadaced
 
 # set default editor
-export EDITOR='subl -w'
+export EDITOR='atom -w'
 export VISUAL="$EDITOR"
 
 # common places
