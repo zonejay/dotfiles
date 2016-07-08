@@ -22,6 +22,7 @@ alias se="java -jar /usr/local/bin/selenium.jar"
 
 # npm script shortcuts
 alias t="npm test"
+alias s="npm start"
 alias b="npm run build"
 alias d="npm run dev"
 alias dt="npm run dev:test"
