@@ -53,6 +53,7 @@ export VISUAL="$EDITOR"
 # common places
 alias v="cd ~/Vue"
 alias vv="cd ~/Vue/vue"
+alias vn="cd ~/Vue/vue-next"
 alias vo="cd ~/Vue/vuejs.org"
 alias vr="cd ~/Vue/vue-router"
 alias vx="cd ~/Vue/vuex"
