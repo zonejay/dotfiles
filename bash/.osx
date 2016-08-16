@@ -62,6 +62,7 @@ alias vl="cd ~/Vue/vue-loader"
 alias vw="cd ~/Vue/vue-templates/test/webpack"
 alias p="cd ~/Personal"
 alias r="cd ~/Research"
+alias wx="cd ~/Weex"
 
 # recursively delete .DS_Store
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"

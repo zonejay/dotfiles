@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[/* @flow */]]></content>
+    <tabTrigger>fl</tabTrigger>
+    <scope>source.js</scope>
+    <description>flow</description>
+</snippet>
