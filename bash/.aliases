@@ -42,9 +42,8 @@ alias hd="rm db.json && hexo generate && hexo deploy"
 alias blog="cd ~/Personal/blog && subl . && hexo server"
 
 # npm shortcuts that only list top-level modules
-# ! overrides the line-number utility
-alias ng="npm list -g --depth=0 2>/dev/null"
-alias nl="npm list --depth=0 2>/dev/null"
+alias l="yarn list --depth=0 2>/dev/null"
+alias lg="npm list -g --depth=0 2>/dev/null"
 
 # process finding
 alias pg="pgrep -lf"
