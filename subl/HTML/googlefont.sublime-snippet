@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-<link href='http://fonts.googleapis.com/css?family=$0' rel='stylesheet' type='text/css'>
-]]></content>
-    <tabTrigger>gf</tabTrigger>
-    <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <scope>text.html</scope>
-</snippet>

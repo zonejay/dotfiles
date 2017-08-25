@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[describe('${1:test}', () => {
-  ${0:// body...}
-})]]></content>
-    <tabTrigger>desc</tabTrigger>
-    <scope>source.js</scope>
-    <description>Describe</description>
-</snippet>

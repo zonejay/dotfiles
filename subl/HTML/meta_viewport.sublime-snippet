@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-]]></content>
-    <tabTrigger>viewport</tabTrigger>
-    <scope>text.html</scope>
-</snippet>
