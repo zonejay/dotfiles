@@ -14,13 +14,13 @@ alias la="ls -A"
 alias ll="ls -Al"
 
 # npm script shortcuts
-alias t="npm test"
-alias s="npm start"
-alias b="npm run build"
-alias d="npm run dev"
-alias dt="npm run dev:test"
-alias ds="npm run dev:ssr"
-alias nr="npm run"
+alias t="yarn test"
+alias b="yarn build"
+alias d="yarn dev"
+alias s="yarn serve"
+alias dt="yarn dev:test"
+alias ds="yarn dev:ssr"
+alias nr="yarn"
 
 # git shortcuts
 alias gs="git status"
