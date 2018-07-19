@@ -15,6 +15,8 @@ alias ll="ls -Al"
 
 # npm script shortcuts
 alias t="yarn test"
+alias tu="yarn test:unit"
+alias te="yarn test:e2e"
 alias b="yarn build"
 alias d="yarn dev"
 alias s="yarn serve"
