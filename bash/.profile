@@ -17,4 +17,4 @@ fi
 # edit this folder
 alias dot="cd ~/.dotfiles"
 # reload
-alias rl="source ~/.profile; echo '~/.profile reloaded.'"
+alias rl="source ~/.bashrc; echo '~/.bashrc reloaded.'"
