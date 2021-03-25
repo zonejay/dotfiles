@@ -17,11 +17,18 @@ alias ll="ls -Al"
 alias nr="yarn"
 alias t="yarn test"
 alias b="yarn build"
+alias tb="yarn test-build"
 alias d="yarn dev"
 alias dd="yarn debug"
 alias s="yarn serve"
 alias de="yarn dev-example"
 alias be="yarn build-example"
+
+# debug SFC by linking local packages
+alias lk="yarn link vite vue @vue/compiler-sfc @vitejs/plugin-vue"
+
+# debug vite
+alias dv="node --inspect-brk /Users/evan/Vue/vite/packages/vite/bin/vite"
 
 # git shortcuts
 alias gs="git status"

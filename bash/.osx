@@ -65,6 +65,7 @@ alias vw="cd ~/Vue/vue-templates/test/"
 alias vp="cd ~/Vue/vuepress"
 alias p="cd ~/Personal"
 alias r="cd ~/Research"
+alias rr="cd ~/Research/repros"
 alias wx="cd ~/Weex"
 
 # recursively delete .DS_Store
