@@ -14,18 +14,15 @@ alias la="ls -A"
 alias ll="ls -Al"
 
 # npm script shortcuts
-alias nr="yarn"
-alias t="yarn test"
-alias b="yarn build"
-alias tb="yarn test-build"
-alias d="yarn dev"
-alias dd="yarn debug"
-alias s="yarn serve"
-alias de="yarn dev-example"
-alias be="yarn build-example"
-
-# debug SFC by linking local packages
-alias lk="yarn link vite vue @vue/compiler-sfc @vitejs/plugin-vue"
+alias i="ni"
+alias t="nr test"
+alias b="nr build"
+alias tb="nr test-build"
+alias d="nr dev"
+alias dd="nr debug"
+alias s="nr serve"
+alias de="nr dev-example"
+alias be="nr build-example"
 
 # debug vite
 alias dv="node --inspect-brk /Users/evan/Vue/vite/packages/vite/bin/vite"
@@ -49,8 +46,6 @@ alias gbb="git bisect bad"
 
 # blogging shortcuts
 alias hs="hexo server"
-alias hd="rm db.json && hexo generate && hexo deploy"
-alias blog="cd ~/Personal/blog && subl . && hexo server"
 
 # npm shortcuts that only list top-level modules
 alias l="yarn list --depth=0 2>/dev/null"
