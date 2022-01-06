@@ -67,6 +67,7 @@ alias p="cd ~/Personal"
 alias r="cd ~/Research"
 alias rr="cd ~/Research/repros"
 alias wx="cd ~/Weex"
+alias pl="pnpm link -g"
 
 # recursively delete .DS_Store
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
