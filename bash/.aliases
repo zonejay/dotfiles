@@ -55,12 +55,3 @@ alias lg="npm list -g --depth=0 2>/dev/null"
 
 # process finding
 alias pg="pgrep -lf"
-
-# appengine deploy
-alias dp="appcfg.py update . --oauth2"
-
-# run jasmine tests
-alias jj="jasmine-node --verbose test/unit/specs/"
-
-# checked out version of meteor
-alias m="~/Work/meteor/meteor"
