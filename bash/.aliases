@@ -23,6 +23,7 @@ alias dd="nr debug"
 alias s="nr serve"
 alias de="nr dev-example"
 alias be="nr build-example"
+alias vr="vitest run"
 
 # debug vite
 alias dv="node --inspect-brk /Users/evan/Vue/vite/packages/vite/bin/vite"
