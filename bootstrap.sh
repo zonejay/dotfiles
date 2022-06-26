@@ -1,30 +1,15 @@
-# Before running this script:
-# sudo chrown -R evan /usr/local
-# sudo echo '/usr/local/bin/bash' >> /etc/shells
+. ./mirror/main.sh
+# exit 0
+# Apps
+apps=(
+  zsh
+  curl
+  git
+  vim
+)
 
-# make in case they aren't already there
-mkdir -p "/usr/local/lib"
-mkdir -p "/usr/local/bin"
-
-# Check for Homebrew,
-# Install if we don't have it
-if test ! $(which brew); then
-  echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
-# Update homebrew recipes
-brew update
-
-# Install and use latest bash
-brew install bash
-chsh -s /usr/local/bin/bash
-
-# Install git
-brew install git
-# Some git defaults
-git config --global color.ui true
-git config --global push.default simple
+echo "installing apps..."
+sudo apt install ${apps[@]}
 
 # Install nvm
 echo "Installing nvm..."
@@ -32,52 +17,35 @@ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 nvm install stable
 nvm alias default stable
 
-# Centralize global npm packages for different node versions
-echo "prefix = /usr/local" > ~/.npmrc
-
 # Install Node modules
 modules=(
-  grunt-cli
-  jasmine-node
-  gulp
-  phantomjs
-  casperjs
-  anywhere
-  webpack
-  browserify
-  watchify
-  bower
-  starz
+  pnpm
+  ts
+  ts-node
+  nrm
 )
 
 echo "installing node modules..."
 npm install -g ${modules[@]}
 
-# Install Brew Cask
-echo "Installing brew cask..."
-brew install caskroom/cask/brew-cask
-
-# Apps
-apps=(
-  google-chrome
-  firefox
-  iterm2
-  sublime-text3
-  divvy
-)
-
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
 
 # clone this repo
 git clone https://github.com/yyx990803/dotfiles ~/.dotfiles
 
 # Make some commonly used folders
-mkdir ~/Personal
-mkdir ~/Work
+mkdir ~/project
 
 # Source dot files
 echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
 source ~/.profile
+
+# TODO check zsh
+
+# change default sh to zsh
+chsh -s $(which zsh)
+
+# Install omz
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# TODO Install p10k a zsh theme
+# TODO Install antigen

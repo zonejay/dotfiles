@@ -1,8 +1,14 @@
-# Personal Dotfiles
+# Personal Dotfile for WSL ubuntu
 
-- Bash customizations for OS X and Ubuntu
-	- prompt with git info
+- zsh customizations
+	- omz
+	- plugin management
 	- aliases
 	- functions
-- iTerm2 colors
-- Sublime Text settings
+- apt source change for china mainland 
+- settings for frontend developer
+	- nvm
+	- npm packages
+
+## TODO
+- [ ] omz config with p10k
