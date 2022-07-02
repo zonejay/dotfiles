@@ -11,6 +11,17 @@ apps=(
 echo "installing apps..."
 sudo apt install ${apps[@]}
 
+# change default sh to zsh
+if test ! $(which zsh); then
+    chsh -s $(which zsh)
+    # Install omz
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+    # TODO Install antigen
+    curl -L git.io/antigen > antigen.zsh
+fi
+
+
 # Install nvm
 echo "Installing nvm..."
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
@@ -29,23 +40,12 @@ echo "installing node modules..."
 npm install -g ${modules[@]}
 
 
-# clone this repo
-git clone https://github.com/yyx990803/dotfiles ~/.dotfiles
-
 # Make some commonly used folders
 mkdir ~/project
 
 # Source dot files
-echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
-source ~/.profile
+echo '. ~/.dotfiles/bash/.profile\n' >> ~/.zprofile
+echo '. ~/.dotfiles/config/.antigenrc\n' >> ~/.zprofile
+source ~/.zprofile
 
-# TODO check zsh
-
-# change default sh to zsh
-chsh -s $(which zsh)
-
-# Install omz
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# TODO Install p10k a zsh theme
-# TODO Install antigen
+echo 'reload your terminal and run p10k config to set your prompt'
