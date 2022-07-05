@@ -1,4 +1,4 @@
-. ./mirror/main.sh
+#. ./mirror/main.sh
 # exit 0
 # Apps
 apps=(
@@ -18,7 +18,7 @@ if test ! $(which zsh); then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
     # TODO Install antigen
-    curl -L git.io/antigen > antigen.zsh
+    curl -L git.io/antigen > $HOME/antigen.zsh
 fi
 
 
@@ -44,8 +44,9 @@ npm install -g ${modules[@]}
 mkdir ~/project
 
 # Source dot files
-echo '. ~/.dotfiles/bash/.profile\n' >> ~/.zprofile
-echo '. ~/.dotfiles/config/.antigenrc\n' >> ~/.zprofile
+echo -e '. ~/.dotfiles/bash/.profile\n' >> ~/.zshrc
+echo -e '. ~/.dotfiles/config/.antigenrc\n' >> ~/.zshrc
+echo -e '. ~/.dotfiles/config/.nvmrc\n' >> ~/.zshrc
 source ~/.zprofile
 
 echo 'reload your terminal and run p10k config to set your prompt'

@@ -24,6 +24,7 @@ alias lg="npm list -g --depth=0 2>/dev/null"
 alias pg="pgrep -lf"
 
 # proxy
+hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
 alias fuckgfw='export https_proxy="http://${hostip}:1080";export http_proxy="http://${hostip}:1080";'
 alias unfuck='unset https_proxy;unset http_proxy'
 alias sgit='git config --global http.proxy "http://${hostip}:1080";git config --global https.proxy "http://${hostip}:1080";'

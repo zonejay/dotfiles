@@ -56,7 +56,7 @@ esac
 echo "备份sources.list..."
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 echo "设置新的镜像源..."
-echo "\
+sudo echo "\
 deb $sourceweb/ubuntu/ $Codename main restricted universe multiverse
 deb $sourceweb/ubuntu/ $Codename-security main restricted universe multiverse
 deb $sourceweb/ubuntu/ $Codename-updates main restricted universe multiverse
@@ -66,6 +66,6 @@ deb-src $sourceweb/ubuntu/ $Codename main restricted universe multiverse
 deb-src $sourceweb/ubuntu/ $Codename-security main restricted universe multiverse
 deb-src $sourceweb/ubuntu/ $Codename-updates main restricted universe multiverse
 deb-src $sourceweb/ubuntu/ $Codename-proposed main restricted universe multiverse
-deb-src $sourceweb/ubuntu/ $Codename-backports main restricted universe multiverse">/etc/apt/sources.list
+deb-src $sourceweb/ubuntu/ $Codename-backports main restricted universe multiverse" | sudo tee /etc/apt/sources.list
 echo "更新源..."
 sudo apt-get update

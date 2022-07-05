@@ -17,7 +17,8 @@ function _jump() {
     local cur=${COMP_WORDS[COMP_CWORD]}
     COMPREPLY=( $(compgen -W "$( ls $MARKPATH )" -- $cur) )
 }
-complete -F _jump j
+# change complete to compdef
+compdef _jump j
 
 function mark { 
     mkdir -p $MARKPATH; ln -s $(pwd) $MARKPATH/$1
