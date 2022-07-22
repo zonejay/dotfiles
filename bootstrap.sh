@@ -34,10 +34,11 @@ modules=(
   ts
   ts-node
   nrm
+  @antfu/ni
 )
 
 echo "installing node modules..."
-npm install -g ${modules[@]}
+npm install --location=global ${modules[@]}
 
 
 # Make some commonly used folders

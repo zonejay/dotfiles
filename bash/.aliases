@@ -13,8 +13,6 @@ alias dd="nr debug"
 alias s="nr serve"
 alias de="nr dev-example"
 alias be="nr build-example"
-alias vr="vitest run"
-alias nr="npm run"
 
 # npm shortcuts that only list top-level modules
 alias l="yarn list --depth=0 2>/dev/null"
