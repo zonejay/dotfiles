@@ -45,9 +45,9 @@ npm install --location=global ${modules[@]}
 mkdir ~/project
 
 # Source dot files
-echo -e '. ~/.dotfiles/bash/.profile\n' >> ~/.zshrc
-echo -e '. ~/.dotfiles/config/.antigenrc\n' >> ~/.zshrc
-echo -e '. ~/.dotfiles/config/.nvmrc\n' >> ~/.zshrc
+echo -e '. ~/dotfiles/bash/.profile\n' >> ~/.zshrc
+echo -e '. ~/dotfiles/config/.antigenrc\n' >> ~/.zshrc
+echo -e '. ~/dotfiles/config/.nvmrc\n' >> ~/.zshrc
 source ~/.zprofile
 
 echo 'reload your terminal and run p10k config to set your prompt'
