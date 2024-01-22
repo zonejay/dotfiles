@@ -81,3 +81,40 @@ extract () {
         echo "'$1' is not a valid file"
     fi
 }
+
+function activate_gitlab() {
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa_gitlab
+}
+
+function activate_github() {
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa_github
+}
+
+function switch_ver() {
+    if [ "$#" -ne 2 ]; then
+        echo "Usage: switch_ver <environment> <directory>"
+        return 1
+    fi
+
+    local env_file="./config/$2/$1.env.js"
+    local local_env_file="./config/$2/local.env.js"
+
+    if [ -f "$env_file" ]; then
+        # Copy environment file content to local.env.js
+        cp "$env_file" "$local_env_file"
+        echo "Switched to $1 environment for $2."
+    else
+        echo "Error: Environment file $1.env.js not found for $2."
+        return 1
+    fi
+}
+
+function switch_deepen() {
+    switch_ver "$1" "deepen"
+}
+
+function switch_scheme() {
+    switch_ver "$1" "scheme"
+}
